@@ -1,12 +1,14 @@
 <template>
-  ブログ一覧ページ
-  <ul>
-    <li v-for="post in data">
+  <div class="container mx-auto pt-[100px]">
+  <h2>ブログ一覧ページ</h2>
+  <ul class="mt-5">
+    <li v-for="post in data" class="mt-3">
       <h2>{{ post.title.rendered }}</h2>
+      <div v-html="post.content.rendered" class="mt-3"></div>
       <NuxtLink :to="`/posts/${post.id}`">記事詳細へ</NuxtLink>
-      <div v-html="post.content.rendered"></div>
     </li>
   </ul>
+  </div>
 </template>
 
 <script setup>

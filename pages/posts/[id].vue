@@ -1,8 +1,10 @@
 <template>
-  ブログ記事詳細ページ
-  <div v-if="post">
-    <h2>{{ post.title.rendered }}</h2>
-    <div v-html="post.content.rendered"></div>
+  <div class="container mx-auto pt-[100px]">
+    <h1>ブログ記事詳細ページ</h1>
+    <div v-if="post" class="mt-5">
+      <h2>{{ post.title.rendered }}</h2>
+      <div v-html="post.content.rendered"></div>
+    </div>
   </div>
 </template>
 
