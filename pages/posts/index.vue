@@ -3,7 +3,7 @@
   <ul>
     <li v-for="post in data">
       <h2>{{ post.title.rendered }}</h2>
-      <NuxtLink :to="`/posts/${post.slug}`">記事詳細へ</NuxtLink>
+      <NuxtLink :to="`/posts/${post.id}`">記事詳細へ</NuxtLink>
       <div v-html="post.content.rendered"></div>
     </li>
   </ul>
