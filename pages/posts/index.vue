@@ -11,7 +11,7 @@ const { data } = await useFetch(
   <ul>
   <li v-for="post in data">
     <h2>{{ post.title.rendered }}</h2>
-    <p v-html="post.content.rendered"></p>
+    <div v-html="post.content.rendered"></div>
   </li>
 </ul>
 </template>
