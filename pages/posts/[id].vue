@@ -1,9 +1,9 @@
 <template>
   <div class="container mx-auto pt-[100px]">
-    <h1>ブログ記事詳細ページ</h1>
+    <h2 class="text-3xl">ブログ記事詳細ページ</h2>
     <div v-if="post" class="mt-5">
-      <h2>{{ post.title.rendered }}</h2>
-      <div v-html="post.content.rendered"></div>
+      <h2 class="text-3xl">{{ post.title.rendered }}</h2>
+      <div v-html="post.content.rendered" class="mt-4"></div>
     </div>
   </div>
 </template>
