@@ -1,3 +1,3 @@
 <template>
-    ブログ詳細ページ
+  <h2>記事詳細</h2>
 </template>
