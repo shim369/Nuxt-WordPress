@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto pt-[100px]">
+  <div class="container mx-auto pt-[100px] p-5">
     <h2 class="text-3xl">ブログ記事詳細ページ</h2>
     <div v-if="post" class="mt-5">
       <h2 class="text-3xl">{{ post.title.rendered }}</h2>

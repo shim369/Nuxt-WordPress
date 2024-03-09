@@ -1,12 +1,14 @@
 <template>
-  <div class="container mx-auto pt-[100px]">
+  <div class="container mx-auto pt-[100px] p-5">
     <h2 class="text-3xl">New Posts</h2>
-    <ul class="mt-2">
-      <li v-for="post in data">
-        <NuxtLink :to="`/posts/${post.id}`">{{ post.title.rendered }}</NuxtLink>
-      </li>
-    </ul>
-    <NuxtLink class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 inline-block" to="/posts/">記事一覧へ</NuxtLink>
+    <div class="grid grid-cols-3 gap-4">
+      <NuxtLink v-for="post in data" :to="`/posts/${post.id}`">
+        <div class="p-4 border border-gray-200 rounded mt-5">
+          {{ post.title.rendered }}
+        </div>
+      </NuxtLink>
+    </div>
+    <NuxtLink class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 inline-block" to="/posts/">記事一覧へ</NuxtLink>
   </div>
 </template>
   

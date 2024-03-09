@@ -1,12 +1,13 @@
 <template>
-  <div class="container mx-auto pt-[100px]">
-  <h2 class="text-3xl">ブログ一覧ページ</h2>
-  <ul class="mt-5">
-    <li v-for="post in data" class="mt-3">
-      <h3 class="text-2xl">{{ post.title.rendered }}</h3>
-      <NuxtLink :to="`/posts/${post.id}`" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 inline-block">記事詳細へ</NuxtLink>
-    </li>
-  </ul>
+  <div class="container mx-auto pt-[100px] p-5">
+    <h2 class="text-3xl">ブログ一覧ページ</h2>
+    <div class="grid grid-cols-3 gap-4">
+      <NuxtLink v-for="post in data" :to="`/posts/${post.id}`">
+        <div class="p-4 border border-gray-200 rounded mt-5">
+        {{ post.title.rendered }}
+        </div>
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
