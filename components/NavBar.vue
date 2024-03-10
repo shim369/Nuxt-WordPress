@@ -22,8 +22,8 @@
   
         <!-- Navbar -->
         <div class="hidden md:block">
-          <ul class="flex space-x-8 text-sm font-sans">
-            <li><NuxtLink to="/" class="active border-b-2 border-blue-500 pb-1">Home</NuxtLink></li>
+          <ul class="flex space-x-8 font-sans">
+            <li><NuxtLink to="/" class="">Home</NuxtLink></li>
             <li><NuxtLink to="/posts/" class="">Blog</NuxtLink></li>
           </ul>
         </div>

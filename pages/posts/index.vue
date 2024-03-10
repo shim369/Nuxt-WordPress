@@ -3,8 +3,10 @@
     <h2 class="text-3xl">ブログ一覧ページ</h2>
     <div class="grid grid-cols-3 gap-4">
       <NuxtLink v-for="post in data" :to="`/posts/${post.id}`">
-        <div class="p-4 border border-gray-200 rounded mt-5">
-        {{ post.title.rendered }}
+        <div class="p-6 border border-gray-200 rounded mt-5">
+          <img v-if="post.thumbnail_url" :src="post.thumbnail_url" :alt="post.title.rendered" class="mb-4">
+          <p class="text-xl">{{ post.title.rendered }}</p>
+          <time :datetime="post.date">{{ $formatDate(post.date) }} </time>
         </div>
       </NuxtLink>
     </div>
