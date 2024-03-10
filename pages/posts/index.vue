@@ -1,4 +1,5 @@
 <template>
+  <main class="min-h-[100vh]">
   <div class="container mx-auto pt-[100px] p-5">
     <h2 class="text-3xl">ブログ一覧ページ</h2>
     <div class="grid grid-cols-3 gap-4">
@@ -11,6 +12,7 @@
       </NuxtLink>
     </div>
   </div>
+  </main>
 </template>
 
 <script setup>

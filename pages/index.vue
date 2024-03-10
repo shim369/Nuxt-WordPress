@@ -1,4 +1,5 @@
 <template>
+  <main class="min-h-[100vh]">
   <div class="container mx-auto pt-[100px] p-5">
     <h2 class="text-3xl">New Posts</h2>
     <div class="grid grid-cols-3 gap-4">
@@ -12,6 +13,7 @@
     </div>
     <NuxtLink class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-6 inline-block" to="/posts/">記事一覧へ</NuxtLink>
   </div>
+  </main>
 </template>
   
 <script setup>
