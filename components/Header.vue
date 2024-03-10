@@ -1,7 +1,7 @@
 
 import { NuxtLink } from '#build/components';
 <template>
-  <header class="shadow">
+  <header>
       <NavBar />
   </header>
 </template>
